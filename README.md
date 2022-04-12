@@ -1,5 +1,14 @@
 # MERN Marketplace
 
+
+CSCI 3916 - Group 3:
+https://csc3916-project-api.herokuapp.com/
+
+
+
+
+
+
 An online marketplace application with seller accounts, product search and suggestions, shopping cart, order management, payment processing with Stripe, and live auction with Socket.io - developed using React, Node, Express and MongoDB. 
 
 ![MERN Marketplace](https://s3.amazonaws.com/mernbook/git+/marketplace.png "MERN Marketplace")
