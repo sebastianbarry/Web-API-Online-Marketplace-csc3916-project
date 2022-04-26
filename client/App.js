@@ -1,4 +1,4 @@
-import React from 'react-ga'
+import React from 'react'
 import ReactGA from "react-ga"
 import MainRouter from './MainRouter'
 import {BrowserRouter} from 'react-router-dom'
