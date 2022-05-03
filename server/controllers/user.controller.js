@@ -40,6 +40,11 @@ const userByID = async (req, res, next, id) => {
   }
 };
 
+const setLastItemPurchasedType = async (req, res) => {
+  let user = await User.find(req.profile)
+  user.last_item_purchased_type = req.body;  //HERE
+};
+
 const read = (req, res) => {
   req.profile.hashed_password = undefined;
   req.profile.salt = undefined;

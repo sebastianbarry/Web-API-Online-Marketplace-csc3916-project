@@ -31,7 +31,8 @@ const UserSchema = new mongoose.Schema({
   stripe_customer: {},
   category_list: {
     type: String
-  }
+  },
+  last_item_purchased_type: { type: String , default: ""} //HERE
 })
 
 UserSchema

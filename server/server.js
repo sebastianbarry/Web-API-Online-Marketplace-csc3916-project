@@ -8,7 +8,7 @@ mongoose.connect(config.mongoUri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
-  useFindAndModify: true,
+  useFindAndModify: false,  //HERE
 });
 mongoose.connection.on("open", () => {
   console.log("connected");

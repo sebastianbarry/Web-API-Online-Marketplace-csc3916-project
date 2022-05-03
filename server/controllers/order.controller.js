@@ -1,15 +1,15 @@
 import { UpdateOutlined } from '@material-ui/icons'
 import {Order, CartItem} from '../models/order.model'
 import errorHandler from './../helpers/dbErrorHandler'
-import User from "../models/user.model";
+import User from '../models/user.model'
 
-const create = async (req, res) => {
+const create = async (req, res) => { // HERE
   try {
-    req.body.order.user = req.profile
-    
-    //req.body.order.products[0].product.category
+    req.body.order.user = req.profile;
+    console.log(req.body.order.products[0].product.category);
     const order = new Order(req.body.order)
     let result = await order.save()
+    //await User.findOneAndUpdate(req.profile, {last_item_purchased_type:req.body.order.products[0].product.category})
     res.status(200).json(result)
   } catch (err){
     return res.status(400).json({
