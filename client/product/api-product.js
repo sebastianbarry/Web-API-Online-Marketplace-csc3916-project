@@ -117,7 +117,7 @@ const list = async (params, id, signal) => {
   const query = queryString.stringify(params);
   try {
     if (id) {
-      let response = await fetch("/api/products/" + id, {
+      let response = await fetch("/api/products/lastitem/" + id, {
         method: "GET",
       });
       return response.json();

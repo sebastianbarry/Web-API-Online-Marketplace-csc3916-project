@@ -16,7 +16,9 @@ router.route("/api/products/related/:productId").get(productCtrl.listRelated);
 
 router.route("/api/products/categories").get(productCtrl.listCategories);
 
-router.route("/api/products/:userId").get(productCtrl.listByLastItemPurchased);
+router
+  .route("/api/products/lastitem/:userId")
+  .get(productCtrl.listByLastItemPurchased);
 
 router.route("/api/products").get(productCtrl.list);
 
